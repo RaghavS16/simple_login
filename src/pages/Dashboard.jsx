@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BACKEND_URL = "https://main.d10u9mq0xiws5p.amplifyapp.com";
+const BACKEND_URL = "https://my-auth-api.eba-5jfesjf6.ap-south-1.elasticbeanstalk.com";
 
 export default function Dashboard() {
   const handleLogout = async () => {

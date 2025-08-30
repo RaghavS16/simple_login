@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const BACKEND_URL = "https://main.d10u9mq0xiws5p.amplifyapp.com";
+const BACKEND_URL = "https://my-auth-api.eba-5jfesjf6.ap-south-1.elasticbeanstalk.com";
+
 
 export default function Login() {
   const [email, setEmail] = useState('');
