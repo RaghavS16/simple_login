@@ -1,0 +1,20 @@
+version: 1
+backend:
+  phases:
+    build:
+      commands:
+        - echo "Building backend only"
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - echo "Skipping frontend preBuild"
+    build:
+      commands:
+        - echo "Skipping frontend build"
+  artifacts:
+    baseDirectory: /
+    files:
+      - '**/*'
+  cache:
+    paths: []
