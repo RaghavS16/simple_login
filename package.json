@@ -2,14 +2,14 @@
   "name": "auth-server",
   "version": "1.0.0",
   "main": "server.js",
+  "description": "Auth API",
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
-  "description": "",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "engines": {
+    "node": ">=20"
+  },
   "dependencies": {
     "bcrypt": "^6.0.0",
     "cookie-parser": "^1.4.7",
