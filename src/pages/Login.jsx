@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const BACKEND_URL = "https://my-auth-api.eba-5jfesjf6.ap-south-1.elasticbeanstalk.com";
+const BACKEND_URL = "https://simplelogin-rchl.onrender.com";
 
 
 export default function Login() {
