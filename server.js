@@ -40,9 +40,9 @@ if (!MONGO_URI) {
   process.exit(1);
 }
 
-mongoose.connect(MONGO_URI, { dbName: process.env.MONGO_DB || undefined })
+mongoose.connect(process.env.MONGO_URI, { dbName: process.env.MONGO_DB })
   .then(() => {
-    console.log('✅ MongoDB connected');
+    console.log('✅ MongoDB connected to DB:', process.env.MONGO_DB);
     app.listen(PORT, () => console.log(`🚀 Server listening on port ${PORT}`));
   })
   .catch(err => {
