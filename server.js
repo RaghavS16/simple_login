@@ -9,6 +9,7 @@ const app = express();
 
 // Exact frontend URL (must match Amplify frontend)
 const CLIENT_URL = process.env.CLIENT_URL;
+console.log('CLIENT_URL:', CLIENT_URL);
 
 const corsOptions = {
   origin: CLIENT_URL,          // allow only your frontend
@@ -26,7 +27,7 @@ app.use(cookieParser());
 
 app.use('/api/auth', authRoutes);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
